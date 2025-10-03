@@ -1,86 +1,84 @@
-/* 🔥 Neon Gradient Background with Image */
+/* 🌌 Background */
 body {
-    background: url('images/ai.jpeg') no-repeat center center fixed;
-    background-size: cover;
-    font-family: 'Poppins', sans-serif;
-    color: #1d1c1c;
-    padding: 20px;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    font-family: 'Inter', sans-serif;
+    color: #f1f5f9;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
 }
 
-/* 📄 Title Styling with Neon Glow */
-h1 {
-    font-size: 2.8rem;
-    text-align: center;
-    background: linear-gradient(90deg, #2993b3, #7b2d73);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    text-shadow: 0px 0px 20px rgba(0, 255, 204, 0.8);
-    margin-bottom: 20px;
-}
-
-/* 📂 Upload Section with 3D Glassmorphism */
-.upload-section {
-    background: rgba(255, 255, 255, 0.1);
+/* 📦 Container Card */
+.container {
+    background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(15px);
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0px 5px 25px rgba(0, 255, 204, 0.3);
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 700px;
+    width: 100%;
     text-align: center;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* 🚀 Upload Section Hover Effect */
-.upload-section:hover {
-    transform: scale(1.08);
-    box-shadow: 0px 10px 30px rgba(0, 255, 204, 0.5);
+/* 📄 Title */
+h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #facc15; /* Yellow accent */
+    margin-bottom: 10px;
 }
 
-/* ✍️ Input Field */
-input[type="text"] {
-    width: 95%;
-    padding: 14px;
-    margin-top: 12px;
-    border-radius: 10px;
-    border: none;
-    background: rgba(0, 255, 204, 0.2);
-    color: white;
-    font-size: 18px;
-    box-shadow: inset 0px 2px 12px rgba(0, 255, 204, 0.3);
-    outline: none;
+/* ✍️ Subtitle */
+p {
+    font-size: 1rem;
+    color: #cbd5e1;
+    margin-bottom: 30px;
 }
 
-/* 🎛️ AI Response Box */
-.response-box {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 18px;
+/* 📂 Upload Box */
+.upload-box {
+    border: 2px dashed #facc15;
     border-radius: 12px;
-    margin-top: 25px;
-    box-shadow: 0px 4px 20px rgba(0, 255, 204, 0.4);
-    font-size: 1.3rem;
-}
-
-/* 🚀 Button with Neon Glow */
-button {
-    background: linear-gradient(135deg, #2993b3, #7b2d73);
-    color: white;
-    padding: 14px 22px;
-    border: none;
-    border-radius: 10px;
-    font-size: 20px;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.02);
+    transition: all 0.3s ease;
     cursor: pointer;
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 5px 18px rgba(0, 255, 204, 0.6);
 }
 
-/* 🎮 Button Hover Effect */
+.upload-box:hover {
+    background: rgba(255, 255, 255, 0.06);
+    transform: scale(1.02);
+    border-color: #fde047; /* lighter yellow */
+}
+
+/* 📎 Upload text */
+.upload-box span {
+    display: block;
+    margin-top: 10px;
+    color: #e2e8f0;
+    font-size: 0.95rem;
+}
+
+/* 📌 Button */
+button {
+    margin-top: 20px;
+    background: #facc15;
+    color: #0f172a;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
 button:hover {
-    background: linear-gradient(135deg, #2993b3, #7b2d73);
-    transform: scale(1.08);
-    box-shadow: 0px 8px 25px rgba(0, 255, 204, 0.7);
+    background: #fde047;
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 15px rgba(250, 204, 21, 0.4);
 }
